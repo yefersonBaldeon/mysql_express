@@ -15,7 +15,6 @@ app.use(cors());
 app.use("/api/employees", employeesRoutes);
 
 
-
 app.use("/", indexRoutes);
 
 app.use((req, res, next) => {

@@ -54,10 +54,8 @@ export const createEmployees = async (req, res) => {
 };
 
 export const updareEmployees = async (req, res) => {
-
   try{
-
-    const { id } = req.params;
+    const {id} = req.params;
     const { name, salery } = req.body;
   
     const [result] = await pool.query(
